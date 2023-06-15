@@ -16,4 +16,5 @@ require_once "function.inc.php";
    }
    session_start();
    $_SESSION["username"]=$userExists["userName"];
+   $_SESSION["image"]=$userExists["image_url"];
    header("location:../html/index.php");
