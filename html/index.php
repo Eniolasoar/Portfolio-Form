@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,10 +23,20 @@
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Log In</a></li>
-        <li><a href="signup.html">Sign UP</a></li>
-    </ul>
+    <?php
+    if(isset($_SESSION["username"])){
+        echo "<li><a href='../html/profile.php'>Click Here to view your profile</a></li>";
+        echo "<li><a href='../php/logout.php'>Click Here to Log out/a></li>";
+    }
+    else{
+        echo " <ul>
+        <li><a href=''>Home</a></li>
+        <li><a href=''>Log In</a></li>
+        <li><a href='signup.html'>Sign UP</a></li>
+    </ul>";
+    }
+
+    ?>
+   
 </body>
 </html>

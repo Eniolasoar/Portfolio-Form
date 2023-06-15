@@ -14,7 +14,7 @@ input[type="text"],input[type="password"],input[type="email"]
 {
     width: 307px;
     height: 35px;
-    background-color:#004d80 ;
+    background-color:rgb(0, 77, 128) ;
    
     padding-left: 10px;
     color: black;
