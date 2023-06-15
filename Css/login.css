@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(200deg,rgba(0,162,252), rgba(0,77,128)) ;
+   
+}
+
+h2{
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+input[type="text"],input[type="password"],input[type="email"]
+{
+    width: 307px;
+    height: 35px;
+    background-color:#004d80 ;
+   
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input{
+    margin: 10px 0;
+    background-color: #004d80;
+    border: 0;
+   color: white;
+    
+    
+}
+
+
+
+
+
+::placeholder,.check1{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.row1{
+    margin: 0;
+}
+.row1 .placeholder{
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: arial;
+    position: absolute;
+    top: 50%;
+    left: 16.91%;
+    transform: translate(-50%,-50%);
+    transition: 1s ease-out;
+    
+}
+.nation{
+    height:30px ;
+    padding: 10px;
+    width: 170px;
+}
+.row1 input:hover .paragraph{
+    background-color: green;
+}

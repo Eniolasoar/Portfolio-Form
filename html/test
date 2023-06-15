@@ -1,0 +1,23 @@
+ <div class="body2" style="position:relative;">
+        <h2 class="code-heading">An code has being sent to your<br> email address.</h2>
+
+        <p id="insertText"></p>
+        <!-- <p id="insertText"></p> -->
+        <h2 class="code-heading">Insert the<br>
+          code from the email<br>
+          to the box below for email<br>
+          validation</h2>
+        <div class="code-container">
+          <div class="code-box"></div>
+          <div class="code-box"></div>
+          <div class="code-box"></div>
+          <div class="code-box"></div>
+          <div class="code-box"></div>
+        </div>
+
+        <a href="#" class="link">Wrong email address?</a>
+
+        <button class="bottomfloat" id="prevbutton" onclick="prevClick()">Previous</button>
+        <button class="bottom-button">Next</button>
+
+      </div>
