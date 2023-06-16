@@ -9,8 +9,36 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-    <img src="../php/uploads/<?=$_SESSION["image"]?>">
-    <p>My name is <?php echo $_SESSION["username"]?></p>
-    <p>My name is <?php echo $_SESSION["image"]?></p>
+    
+     
+
+    <div class="profile">
+        <h2>My Profile</h2>
+        <img src="../php/uploads/<?=$_SESSION["image"]?>" width="200" style="margin:auto">
+        <div class="profile-details">
+            <label for="name">First Name:</label>
+            <p></p>
+        </div>
+        <div class="profile-details">
+            <label for="name">Last Name:</label>
+            <p></p>
+        </div>
+        <div class="profile-details">
+            <label for="name">UserName:</label>
+            <p></p>
+        </div>
+        <div class="profile-details">
+            <label for="name">Email Address:</label>
+            <p></p>
+        </div>
+        <div class="profile-details">
+            <label for="name">Nationality:</label>
+            <p></p>
+        </div>
+        <div class="profile-details">
+            <label for="name">Gender:</label>
+            <p></p>
+        </div>
+    </div>
 </body>
 </html>
