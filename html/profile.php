@@ -12,6 +12,8 @@ session_start();
             padding:0;
             margin:0;
             box-sizing: border-box;
+            font-family: COPPERPLATE;
+
         }
        body{
             display: flex;
@@ -19,11 +21,12 @@ session_start();
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: gainsboro;
+            background-image:linear-gradient(200deg,rgba(0,162,252), rgba(0,77,128)) ;
         }
         h2{
             text-align: center;
             margin-bottom: 10px;
+            text-decoration: underline;
         }
         .profile{
             border: 1px solid black;
@@ -35,23 +38,42 @@ session_start();
             align-items: center;
             gap: 30px;
             width: 60%;
+            min-width: 400px;
         }
         img{
-            border-radius: 45%;
+            border-radius: 50%;
             
         }
         
         .profile-label,.profile-value{
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 12px;
            
         }
        
         .flex-container{
             display: flex;
             flex-direction: row;
-            gap: 40px;
+            align-items: center;
+            gap: 70px;
+        }
+        label{
+            font-weight: 700;
+        }
+        p{
+            /* background-color:  rgba(0,77,128); */
+            font-weight: 700;
+            border-radius: 10px;
+            color: rgba(0,77,128);
+        }
+        @media screen and (max-width:700px) {
+            .flex-container{
+                gap: 40px;
+            }
+            p{
+                width: 120px;
+            }
         }
     </style>
 </head>
@@ -61,7 +83,7 @@ session_start();
 
     <div class="profile">
         <h2>My Profile</h2>
-        <img src="../php/uploads/<?=$_SESSION["image"]?>" width="200" style="margin:auto">
+        <img src="../php/uploads/<?=$_SESSION["image"]?>" width="150" height="150" style="margin:auto">
         <div class="flex-container">
             <div class="profile-label">
                 <label for="name">First Name:</label>
