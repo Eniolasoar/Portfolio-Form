@@ -42,19 +42,28 @@ session_start();
         }
         .dropdown li{
            display: block;
-           border-bottom: 1px solid;
-           margin: 10px 0;
+           padding: 10px 0;
+           
           
         }
-       
+       .dropdown a{
+        color:white;
+       }
+       .dropdown li:hover{
+        background-color: gainsboro;
+        
+       }
 
         .dropdown{
+            width: 100px;
             position: absolute;
-            top:70px;
-            left: -30px;
-            padding: 10px 5px;
+            top:80px;
+            right: 60px;
+            padding: 10px 0;
            box-shadow: 0 0 2px;
+           background-color: rgba(0,77,128);
            display: none;
+          
         }
         img{
             width: 50px;
@@ -63,7 +72,8 @@ session_start();
         #profile{
             font-size: 12px;
             text-align: center;
-            padding:10px 20px 10px 10px ;
+            padding:10px 50px 10px 10px ;
+            
             
         }
         #profile:hover .dropdown{
@@ -101,12 +111,12 @@ session_start();
                     <li style="position: relative;" id="profile">
                     <img src="../images/html.png" alt="" >
                     <a href="">
-                    Eniola
+                    Welcome <?php echo $_SESSION["userName"]?>!!
                     </a>
                     
                         <ul class="dropdown">
                             <li><a href="profile.php">View Profile</a></li>
-                            <li><a href="">Log Out</a></li>
+                            <li><a href="logout.php">Log Out</a></li>
                         </ul>
                     </li>
                 </div>
