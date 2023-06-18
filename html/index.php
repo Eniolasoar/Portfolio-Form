@@ -66,7 +66,8 @@ session_start();
           
         }
         img{
-            width: 50px;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
         }
         #profile{
@@ -109,14 +110,14 @@ session_start();
                 
                 <div class="right-menu">
                     <li style="position: relative;" id="profile">
-                    <img src="../images/html.png" alt="" >
+                    <img src="../php/uploads/<?=$_SESSION["image"]?>" alt="" >
                     <a href="">
                     Welcome <?php echo $_SESSION["userName"]?>!!
                     </a>
                     
                         <ul class="dropdown">
                             <li><a href="profile.php">View Profile</a></li>
-                            <li><a href="logout.php">Log Out</a></li>
+                            <li><a href="../php/logout.php">Log Out</a></li>
                         </ul>
                     </li>
                 </div>

@@ -74,6 +74,26 @@ session_start();
             word-wrap: break-word;
             flex: 50%;
         }
+        button{
+            padding: 10px;
+            width: 150px;
+            border-radius: 10px;
+            position: fixed;
+            bottom: 20px;
+            left: 50px;
+            background-color: rgba(0,77,128,50%);
+        }
+        button a{
+            color:white;
+            text-decoration: none;
+        }
+        button a:active{
+            transform: translate(0,5px);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgba(0,77,128,100%);
+        }
         @media screen and (max-width:700px) {
             .flex-container{
                 gap: 65px;
@@ -121,5 +141,9 @@ session_start();
        
     
     </div>
+
+    <button>
+        <a href="index.php"><< Back to Home</a>
+    </button>
 </body>
 </html>
