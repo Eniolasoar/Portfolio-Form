@@ -39,6 +39,7 @@ session_start();
             gap: 30px;
             width: 60%;
             min-width: 400px;
+            max-width: 500px;
         }
         img{
             border-radius: 50%;
@@ -55,8 +56,9 @@ session_start();
         .flex-container{
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
-            gap: 70px;
+            gap: 50px;
         }
         label{
             font-weight: 700;
@@ -66,14 +68,13 @@ session_start();
             font-weight: 700;
             border-radius: 10px;
             color: rgba(0,77,128);
+            word-wrap: break-word;
         }
         @media screen and (max-width:700px) {
             .flex-container{
                 gap: 40px;
             }
-            p{
-                width: 120px;
-            }
+            
         }
     </style>
 </head>
@@ -86,6 +87,7 @@ session_start();
         <img src="../php/uploads/<?=$_SESSION["image"]?>" width="150" height="150" style="margin:auto">
         <div class="flex-container">
             <div class="profile-label">
+                <label for="name">User ID:</label>
                 <label for="name">First Name:</label>
                 <label for="name">Last Name:</label>
                 <label for="name">UserName:</label>
@@ -96,12 +98,13 @@ session_start();
 
             <div class="profile-value">
             
-            <p>Anishe Eniola</p>
-            <p>Anishe Eniola</p>
-            <p>Anishe Eniola</p>
-            <p>Anishe Eniola</p>
-            <p>Anishe Eniola</p>
-            <p>Anishe Eniola</p>
+            <p><?php echo $_SESSION["id"];?></p>
+            <p><?php echo $_SESSION["firstName"]; ?></p>
+            <p><?php echo $_SESSION["lastName"]; ?></p>
+            <p><?php echo $_SESSION["userName"]; ?></p>
+            <p><?php echo $_SESSION["email"]; ?></p>
+            <p><?php echo $_SESSION["nationality"]; ?></p>
+            <p><?php echo $_SESSION["gender"]; ?></p>
         </div>
         </div>
      
