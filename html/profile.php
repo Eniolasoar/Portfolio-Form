@@ -29,7 +29,7 @@ session_start();
             text-decoration: underline;
         }
         .profile{
-            border: 1px solid black;
+            
             padding: 10px;
             padding-bottom: 30px;
             display: flex;
@@ -38,8 +38,10 @@ session_start();
             align-items: center;
             gap: 30px;
             width: 60%;
-            min-width: 400px;
+            min-width: 350px;
             max-width: 500px;
+            background-color: gainsboro;
+            box-shadow: 0 2px 6px  ;
         }
         img{
             border-radius: 50%;
@@ -62,6 +64,7 @@ session_start();
         }
         label{
             font-weight: 700;
+            flex: 50%;
         }
         p{
             /* background-color:  rgba(0,77,128); */
@@ -69,10 +72,17 @@ session_start();
             border-radius: 10px;
             color: rgba(0,77,128);
             word-wrap: break-word;
+            flex: 50%;
         }
         @media screen and (max-width:700px) {
             .flex-container{
-                gap: 40px;
+                gap: 65px;
+            }
+            label{
+                margin: 2.2px 0;
+            }
+            p{
+                width: 100px;
             }
             
         }
