@@ -8,80 +8,8 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/index.css">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-        }ul{
-            list-style-type: none;
-        }
-        nav{
-            
-            box-shadow: 0px 0px 2px ;
-        }
-        .nav-bar{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .left-menu{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-        }
-        a{
-            display: block;
-            text-decoration: none;
-            color:rgba(0,77,128);
-            text-transform: uppercase;
-        }
-        .left-menu li{
-            display: inline-block;
-            padding: 10px;
-        }
-        .dropdown li{
-           display: block;
-           padding: 10px 0;
-           
-          
-        }
-       .dropdown a{
-        color:white;
-       }
-       .dropdown li:hover{
-        background-color: gainsboro;
-        
-       }
-
-        .dropdown{
-            width: 100px;
-            position: absolute;
-            top:80px;
-            right: 60px;
-            padding: 10px 0;
-           box-shadow: 0 0 2px;
-           background-color: rgba(0,77,128);
-           display: none;
-          
-        }
-        img{
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-        }
-        #profile{
-            font-size: 12px;
-            text-align: center;
-            padding:10px 50px 10px 10px ;
-            
-            
-        }
-        #profile:hover .dropdown{
-            cursor: pointer;
-            display: block;
-        }
-    </style>
 </head>
 <!-- <body>
     <?php
