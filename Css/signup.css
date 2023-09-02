@@ -63,6 +63,508 @@ input{
 .row1 input:hover .paragraph{
     background-color: green;
 }
+input:focus {
+    outline: 2px solid black;
+    background-color: #004d80 !important;
+}
+
+
+input[type="radio"] {
+    accent-color: #004d80;
+}
+
+/* .animation {
+     animation:placeholder 4s ease-in-out
+  } */
+option {
+    color: black;
+}
+
+@keyframes placeholder {
+    0% {
+        top: 50%;
+        left: -200px;
+        visibility: hidden;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    90% {
+        transform: rotateY(180deg);
+    }
+
+    /*
+      100%{
+          transform: rotateY(360deg);
+
+      } */
+}
+
+.align-items {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+}
+
+.body {
+    background-color: rgba(0, 162, 252);
+    height: 536px;
+    width: 400px;
+
+    padding: 10px 30px;
+    box-shadow: -7px 8px rgba(0, 77, 128);
+    transition: 3.5s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    min-height: 536px;
+}
+
+button {
+    width: 100px;
+    background-color: #004d80;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: -5px 5px #56c1ff;
+
+}
+
+#button {
+    float: right;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 2px #56c1ff;
+    transform: translateY(4px);
+    cursor: pointer;
+}
+
+.bubble1 {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-image: linear-gradient(200deg,
+    white,
+    rgba(0, 162, 252),
+    #004d80);
+    border-radius: 50%;
+    opacity: 0.4;
+    margin: 5px 0;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    bottom: -90px;
+}
+
+.bubble {
+    animation: bubble 4s ease-in-out infinite;
+}
+
+.bubbles1 {
+    animation-delay: 5s;
+}
+
+.bubbles2 {
+    animation-delay: 4.2s;
+}
+
+.bubbles3 {
+    animation-delay: 3.5s;
+}
+
+.bubbles4 {
+    animation-delay: 6s;
+}
+
+.bubbles5 {
+    animation-delay: 5.2s;
+}
+
+.bubbles6 {
+    animation-delay: 1.8s;
+}
+
+.bubbles7 {
+    animation-delay: 0.5s;
+}
+
+.bubbles8 {
+    animation-delay: 7s;
+}
+
+.bubbles9 {
+    animation-delay: 2s;
+}
+
+.bubbles10 {
+    animation-delay: 2.5s;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.container {
+    display: block;
+    margin: 15px 0;
+    user-select: none;
+    position: relative;
+    padding-left: 30px;
+}
+
+.checkbox-group {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+
+}
+
+.custom-checkbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #56c1ff;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+
+.custom-checkbox:after {
+    content: "";
+    position: absolute;
+}
+
+.container .custom-checkbox::after {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(11, 86, 11);
+;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+/* .container input:checked ~ .custom-checkbox::after {
+    display: block;
+  } */
+
+.invalid {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #56c1ff;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+}
+
+.invalid:after {
+    content: "✖";
+    position: absolute;
+    color: red;
+}
+
+.container .invalid::after {
+    position: absolute;
+    left: 3px;
+    top: 1px;
+}
+
+.container input:checked~.invalid::after {
+    display: block;
+}
+
+#passwordBox {
+    transition: 1s all;
+    display: none;
+}
+
+.done {
+
+    color: rgb(11, 86, 11);
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+
+}
+
+
+
+
+.passwordToggle {
+    width: 15px;
+    height: 15px;
+    accent-color: #56c1ff;
+    border-radius: 5px;
+    margin-top: 10px;
+
+
+}
+
+.passwordToggle:focus {
+    border: none;
+}
+
+.flip-container {
+    width: 400px;
+    height: 536px;
+    background-color: transparent;
+    perspective: 1000px;
+
+}
+
+.flip-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.flip-back {
+
+    transform: rotateY(180deg);
+}
+
+
+
+.box-toggle {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    width: 70px;
+    height: 70px;
+    background-color: #004d80;
+    margin: 0px 10px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    animation: fadeEffect 5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.box1:before {
+    content: "_________";
+    margin-left: 65px;
+    height: 30px;
+}
+
+.box1:hover {
+    cursor: pointer;
+}
+
+
+.code-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code-box {
+    width: 58px;
+    height: 58px;
+    border-radius: 9px;
+    display: inline-block;
+    margin: 0 3px;
+
+
+    background-color: #004d80;
+    margin-top: 60px;
+}
+
+.bottom-button {
+    position: absolute;
+    bottom: 10px;
+    left: 70%;
+}
+
+.code-heading {
+    padding-top: 30px;
+}
+
+.link {
+    display: block;
+    padding-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.body2 {
+    background-color: rgba(0, 162, 252);
+    height: 536px;
+    width: 400px;
+
+    padding: 10px 30px;
+    box-shadow: -7px 8px rgba(0, 77, 128);
+    transition: 3.5s;
+}
+
+
+
+button[type="submit"] {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+}
+
+#insertText {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    color: #004d80;
+}
+
+.boxBorder1 {
+    border: 2px solid green;
+}
+
+.checktick {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: none;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
+}
+
+.checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes scale {
+
+    0%,
+    100% {
+        transform: none
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1)
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142
+    }
+}
+
+.body2 img {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+
+}
+
+.body2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    justify-content: space-around;
+}
+
+input[type="file"] {
+    padding: 20px;
+    margin: 20px 0px 10px 20px;
+}
 
 
 
