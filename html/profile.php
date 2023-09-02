@@ -49,6 +49,23 @@ session_start();
 
         </button>
 
+        <button class="deleteProfile">
+            <img src="../images/edit_Profile.png" width="20">
+            <p>Delect Account</p>
+
+        </button>
+
+        <script>
+            const edit = document.querySelector(".editProfile");
+            const deleteProfile = document.querySelector(".deleteProfile");
+            edit.addEventListener('click',()=>{
+                window.location.href="editProfile.html";
+            });
+            deleteProfile.addEventListener('click',()=>{
+                window.location.href="../php/deleteAccount.php";
+            })
+        </script>
+
         </div>
      
        

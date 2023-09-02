@@ -11,11 +11,32 @@ function emptyFunction($firstname,$lastname,$username,$email,$nationality,$gende
     }
     return $result;
 }
+function emptyFunction2($firstname,$lastname,$username,$email,$nationality,$gender){
+    $result="";
+    if(empty($firstname)||empty($lastname)||empty($username)||empty($email)||$nationality==""||$gender==""){
+        $result="true";
+    }
+    else{
+        $result="false";
+    }
+    return $result;
+}
 
 
 function maxlength($firstname,$lastname,$username,$email,$nationality,$gender,$password,$repeatPassword){
     $result="";
     if((strlen($firstname)>30||strlen($lastname)>30||strlen($username)>30||strlen($email)>30||strlen($nationality)>30||strlen($gender)>30||strlen($password)>22||strlen($repeatPassword)>22)){
+        $result="true";
+    }
+    else{
+        $result="false";
+    }
+    return $result;
+}
+
+function maxlength2($firstname,$lastname,$username,$email,$nationality,$gender){
+    $result="";
+    if((strlen($firstname)>30||strlen($lastname)>30||strlen($username)>30||strlen($email)>30||strlen($nationality)>30||strlen($gender)>30)){
         $result="true";
     }
     else{

@@ -94,6 +94,9 @@ p{
     justify-content: center;
     align-items: center;
 }
+.editProfile:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:700px) {
     .flex-container{
         gap: 65px;
