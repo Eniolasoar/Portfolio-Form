@@ -11,7 +11,7 @@ require_once "function.inc.php";
    $pwdHashed=$userExists["password"];
    $checkedPassword=password_verify($password,$pwdHashed);
 
-   if($checkedPassword==false){
+   if(!$checkedPassword){
     echo "wrong login";
    }
    session_start();

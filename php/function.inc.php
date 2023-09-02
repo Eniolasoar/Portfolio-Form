@@ -96,9 +96,7 @@ function userExists($conn,$username){
     mysqli_stmt_close($stmt);
 }
 
-// function uniqueUsername
-// function uniqueEmailaddress
-//TURN FIRST LETTER TO CAPITAL
+
 
 function emailExists($conn,$email){
     $sql="SELECT * FROM users WHERE email=?";

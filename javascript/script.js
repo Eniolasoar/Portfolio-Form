@@ -12,5 +12,7 @@ for (i = 0; i < input.length; i++) {
     label.style.color = "white";
   });
 }
+//a function
+
 
 
