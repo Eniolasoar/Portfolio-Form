@@ -179,7 +179,8 @@
         </div>
         <div class="flip-back">
           <div class="body2" style="position:relative;">
-            <img src="../images/html.png">
+              <!-----<a href="https://www.freepik.com/icons/avatar">Icon by Corner Pixel</a>--->
+            <img src="../images/profile_avatar.png">
             <div class="flexbox">
               <h2>Upload Profile Picture:</h2>
               <input type="file" name="file">

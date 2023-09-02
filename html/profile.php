@@ -15,7 +15,7 @@ session_start();
 
     <div class="profile">
         <h2>My Profile</h2>
-        <img src="../php/uploads/<?=$_SESSION["image"]?>" width="150" height="150" style="margin:auto">
+        <img src="../php/uploads/<?=$_SESSION["image"]?>" width="150" height="150" style="margin:auto"class="profilePicture">
         <div class="flex-container">
             <div class="profile-label">
                 <label for="name">User ID:</label>
@@ -29,21 +29,33 @@ session_start();
 
             <div class="profile-value">
             
-            <p><?php echo $_SESSION["id"];?></p>
-            <p><?php echo $_SESSION["firstName"]; ?></p>
-            <p><?php echo $_SESSION["lastName"]; ?></p>
-            <p><?php echo $_SESSION["userName"]; ?></p>
-            <p><?php echo $_SESSION["email"]; ?></p>
-            <p><?php echo $_SESSION["nationality"]; ?></p>
-            <p><?php echo $_SESSION["gender"]; ?></p>
+                <p><?php echo $_SESSION["id"];?></p>
+                <p><?php echo $_SESSION["firstName"]; ?></p>
+                <p><?php echo $_SESSION["lastName"]; ?></p>
+                <p><?php echo $_SESSION["userName"]; ?></p>
+                <p><?php echo $_SESSION["email"]; ?></p>
+                <p><?php echo $_SESSION["nationality"]; ?></p>
+                <p><?php echo $_SESSION["gender"]; ?></p>
+
+
+            </div>
+
         </div>
+
+        <!-----<a href="https://www.freepik.com/search?format=search&last_filter=query&last_value=edit&query=edit&type=icon">Icon by Kiranshastry</a> -->
+        <button class="editProfile">
+            <img src="../images/edit_Profile.png" width="20">
+            <p>Edit Profile</p>
+
+        </button>
+
         </div>
      
        
     
     </div>
 
-    <button>
+    <button class="backToHome">
         <a href="index.php"><< Back to Home</a>
     </button>
 </body>
